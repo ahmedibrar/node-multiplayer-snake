@@ -6,8 +6,8 @@ node ('ubuntu-app-agent'){
     } 
     
     stage('Build-and-Tag') {
-        sh 'echo Build-and-Tag'
-    /* This builds the actual image; synonymous to
+       // sh 'echo Build-and-Tag'
+       /* This builds the actual image; synonymous to
          * docker build on the command line */
        app = docker.build("ibrarahmed/snake")
     }
