@@ -23,6 +23,7 @@ node ('ubuntu-app-agent'){
         sh 'echo Pull-image-server'
     
         sh "docker-compose down"
+        sh "sleep 20"
         sh "docker-compose up -d"	
       }
 }
